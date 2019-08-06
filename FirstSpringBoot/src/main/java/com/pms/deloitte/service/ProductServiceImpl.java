@@ -18,8 +18,10 @@ public class ProductServiceImpl implements ProductService {
 	@Transactional
 	public void addProduct(Product product) {
 		// TODO Auto-generated method stub
+		if(product.getProductId()!=0)
 		productDAO.save(product);
-		
+	
+
 	}
 
 	@Override
@@ -29,7 +31,7 @@ public class ProductServiceImpl implements ProductService {
 		Product product = new Product();
 		product.setProductId(productId);
 		productDAO.delete(product);
-		
+
 	}
 
 	@Override
@@ -37,29 +39,29 @@ public class ProductServiceImpl implements ProductService {
 	public void updateProduct(Product product) {
 		// TODO Auto-generated method stub
 		productDAO.save(product);
-		
-		
+
+
 	}
 
 	@Override
-	public Optional<Product> getProductById(int productId) {
+	public Product getProductById(int productId) {
 		// TODO Auto-generated method stub
-		
-		Optional<Product>product = productDAO.findById(productId);
+
+		Optional<Product> product = this.productDAO.findById(productId);
 		if(product.isPresent())
 		{
-		return product;
+			return product.get();
 		}
 		else
 		{
 			return null;
-			
+
 		}
-		
+
 	}
 
 	@Override
-	public List<Product> getAllProducts() {
+	public List<Product> listProducts() {
 		// TODO Auto-generated method stub
 		return (List<Product>)productDAO.findAll();
 	}
@@ -69,7 +71,7 @@ public class ProductServiceImpl implements ProductService {
 		// TODO Auto-generated method stub
 		List<Product> product = productDAO.findByProductName(productName);
 		return product;
-}
+	}
 
 	@Override
 	public List<Product> searchByPriceRange(int min, int max) {
