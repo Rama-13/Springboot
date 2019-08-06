@@ -1,0 +1,54 @@
+package com.pms.deloitte.controller;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pms.deloitte.dao.ProductDAO;
+import com.pms.deloitte.model.Product;
+import com.pms.deloitte.service.ProductService;
+
+@RestController
+public class ProductController {
+	@Autowired
+	ProductService productService;
+	@Autowired
+	Product product;
+	@RequestMapping("/getProductbyId/{pId}")
+	public String getProductById(@PathVariable("pId")Integer,productId) {
+		return productService.getProductById(product.getProductId());
+	
+	}
+	
+@RequestMapping("/addProduct")
+public String addProduct()
+{
+	
+	Product product = new Product(111,"Bottle",1000,205);
+	productService.addProduct(product);
+
+	return "Product added to database";
+	}
+@RequestMapping("/deleteProduct")
+public String deleteProduct()
+{
+productService.deleteProduct(product.getProductId());
+return "product deleted";	
+
+}
+
+@RequestMapping("/updateProduct")
+public String updateProduct()
+{
+	
+productService.updateProduct(product);
+return "product details updated";
+}
+
+
+
+
+}

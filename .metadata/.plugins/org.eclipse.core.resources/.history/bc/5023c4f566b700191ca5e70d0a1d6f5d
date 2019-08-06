@@ -1,0 +1,26 @@
+package com.pms.deloitte.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "hr.Product100")
+public class Product {
+	@Id
+	private int productId;
+	@Column
+	private String productName;
+	@Column
+	private int quantity;
+	@Column
+	private int price ;
+	
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
+	
+
+
+}

@@ -1,0 +1,12 @@
+INDEX VERSION 1.4+C:\Users\matham24\Documents\JavaTraining\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1041284200.index
+744357045.index
+4022106992.index
+2645882980.index
+1695302777.index
+3482015266.index
+3230340705.index
+1940478355.index
+3691632062.index
+2581046393.index
+584738685.index

@@ -1,0 +1,10 @@
+package com.pms.deloitte.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProductDAO extends CrudRepository<Product, Integer> 
+{
+	
+	
+
+}

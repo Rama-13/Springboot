@@ -1,0 +1,13 @@
+package com.movie.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(schema = "hr", name = "Moviedb")
+public class Movie {
+	
+	
+	
+
+}

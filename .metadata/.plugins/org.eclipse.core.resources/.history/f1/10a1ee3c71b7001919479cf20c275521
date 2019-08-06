@@ -1,0 +1,22 @@
+package com.movie.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.movie.dao.MovieDAO;
+
+@RestController
+public class MovieController {
+	
+	@Autowired
+	MovieDAO movieDAO;
+
+	
+	@RequestMapping("/getMovie")
+	public String getMovie()
+	{
+		return "This is your movie";
+		
+	}
+}

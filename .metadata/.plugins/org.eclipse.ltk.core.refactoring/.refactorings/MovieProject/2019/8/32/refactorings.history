@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.demo&apos; to &apos;com.movie&apos;&#x0D;&#x0A;- Original project: &apos;MovieProject&apos;&#x0D;&#x0A;- Original element: &apos;MovieProject/src/main/java/com.demo&apos;&#x0D;&#x0A;- Renamed element: &apos;MovieProject/src/main/java/com.movie&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.demo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.demo" name="com.movie" qualified="false" references="true" stamp="1565002760966" textual="false" version="1.0"/>
+</session>

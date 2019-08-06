@@ -1,0 +1,12 @@
+package com.pms.deloitte.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "hr.Product100")
+public class Product {
+	
+
+
+}

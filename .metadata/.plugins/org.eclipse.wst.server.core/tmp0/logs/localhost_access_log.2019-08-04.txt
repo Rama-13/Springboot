@@ -1,0 +1,7 @@
+127.0.0.1 - - [04/Aug/2019:21:22:51 -0700] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [04/Aug/2019:21:22:51 -0700] "GET /SpringMVCDemo/index.html HTTP/1.1" 200 629
+0:0:0:0:0:0:0:1 - - [04/Aug/2019:21:22:55 -0700] "GET /SpringMVCDemo/leave.do HTTP/1.1" 404 1064
+0:0:0:0:0:0:0:1 - - [04/Aug/2019:21:23:14 -0700] "GET /SpringMVCDemo/leave.do HTTP/1.1" 404 1064
+0:0:0:0:0:0:0:1 - - [04/Aug/2019:21:27:45 -0700] "GET /SpringMVCDemo/SearchCustomerById.do HTTP/1.1" 500 6352
+127.0.0.1 - - [04/Aug/2019:21:30:04 -0700] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [04/Aug/2019:21:30:07 -0700] "GET /SpringMVCDemo/SearchCustomerById.do HTTP/1.1" 500 6352
